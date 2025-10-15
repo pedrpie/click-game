@@ -1,0 +1,101 @@
+body{
+    background-color: #303030;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title{
+    animation: changeColor 3s infinite;
+}
+
+#main{
+    flex: 1;
+}
+
+@keyframes changeColor {
+    0%{
+        color: #59b4f5;
+    }
+    10%{
+        color: rgb(0, 195, 0);
+    }
+    20%{
+        color: red;
+    }
+    30%{
+        color: pink;
+    }
+    40%{
+        color: rgb(76, 229, 191);
+    }
+    50%{
+        color: rgb(255, 244, 40);
+    }
+    60%{
+        color: orange;
+    }
+    70%{
+        color: blueviolet;
+    }
+    80%{
+        color: rgb(197, 143, 76);
+    }
+    90%{
+        color: chartreuse;
+    }
+    100%{
+        color: #59b4f5;
+    }
+}
+
+button{
+    background-color: blue;
+    color: white;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: rgb(65, 81, 255);
+}
+
+#modal{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#modal-content{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    padding-left: 75px;
+    width: 400px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    animation: aparecer 0.3s ease;
+}
+
+@keyframes aparecer{
+    from{
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+a{
+    color: rgb(126, 45, 255);
+    text-decoration: underline;
+}

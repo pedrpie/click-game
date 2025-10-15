@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Game</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main" class="flex flex-col justify-center items-center">
+        <h1 id="title" class="text-6xl pb-3">Click Game</h1>
+        <p class="text-3xl text-white pb-3">Clique o mais rápido que puder!</p>
+
+        <div class="flex gap-6 pb-3">
+            <button id="button10s">10s</button>
+            <button id="button20s">20s</button>
+            <button id="button30s">30s</button>
+        </div>
+
+        <div class="flex justify-center items-center text-center bg-gray-400 w-135 rounded-sm">
+            <div class="ml-30 p-10">
+                <h1 id="countNumber" class="text-5xl mb-3">0</h1>
+                <button id="buttonClick">Clicar</button>
+            </div>
+            <div class="mb-30 w-35 text-left">
+                <p id="seconds" class="text-2xl ml-2">Tempo:</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal">
+        <div id="modal-content">
+            <h1 class="text-3xl pb-3">Tempo esgotado!</h1>
+            <p id="clicksModal" class="pb-3">Quantidade de clicks: </p>
+            <button id="fecharModal">Fechar</button>
+        </div>
+    </div>
+
+    <footer class="flex justify-center items-center gap-2 w-full bg-black text-white">
+        <p>Desenvolvido por <a href="https://www.github.com/pedrpie/">Pedro Costa</a></p>
+        <a href="https://www.github.com/pedrpie/"><img src="assets/github.png" alt="github logo" width="50px"></a>
+    </footer>
+    
+<script src="script.js"></script>
+</body>
+</html>
