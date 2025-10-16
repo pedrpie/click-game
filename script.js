@@ -31,6 +31,8 @@ button10s.addEventListener("click", () => {
     if (timerAtivo) return;
     timerAtivo = true;
     button10s.disabled = true;
+    countNumber.textContent = 0;
+    count = 0;
     time10s = 10
     seconds.textContent = "Tempo: " + time10s + "s"
 
@@ -52,6 +54,8 @@ button20s.addEventListener("click", () => {
     if (timerAtivo) return;
     timerAtivo = true;
     button20s.disabled = true;
+    countNumber.textContent = 0;
+    count = 0;
     time20s = 20
     seconds.textContent = "Tempo: " + time20s + "s"
 
@@ -72,20 +76,22 @@ button30s.addEventListener("click", () => {
     if (timerAtivo) return;
     timerAtivo = true;
     button30s.disabled = true;
+    countNumber.textContent = 0;
+    count = 0;
     time30s = 30
     seconds.textContent = "Tempo: " + time30s + "s"
 
     timer = setInterval(() => {
         time30s--;
         seconds.textContent = "Tempo: " + time30s + "s";
-    }, 1000)
-
-    if (time30s <= 0) {
+        
+        if (time30s <= 0) {
             clearInterval(timer)
             button30s.disabled = false;
             timerAtivo = false
             mensagem();
         }
+    }, 1000)
 });
 
 buttonClick.addEventListener("click", () => {

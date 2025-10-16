@@ -99,3 +99,27 @@ a{
     color: rgb(126, 45, 255);
     text-decoration: underline;
 }
+
+@media(max-width: 600px){
+    #main{
+        width: 300px;
+    }
+
+    #buttons{
+        flex-direction: column;
+    }
+
+    #mainBg{
+        width: 300px;
+    }
+
+    #divCount{
+        margin: 0;
+        padding: 0;
+    }
+
+    #secondsDiv{
+        width: 0;
+        margin-right: 100px;
+    }
+}
